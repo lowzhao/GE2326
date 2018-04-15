@@ -13,16 +13,41 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
 	    crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-		crossorigin="anonymous"></script>
-		<style>
-		#Prestige:hover{
-			background-color:#b5963a;
-			box-shadow: 0 0 30px gold;
-			color:floralwhite;
-			
+	    crossorigin="anonymous"></script>
+	<style>
+		@keyframes example {
+			0% {
+				box-shadow: 0 0 40px grey;
+			}
+			50% {
+				box-shadow: 0 0 200px gold;
+			}
+			100% {
+				box-shadow: 0 0 40px grey;
+			}
 		}
 
-		</style>
+		#Prestige {
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			transition: ease-in-out;
+			transition-duration: 0.5s;
+		}
+
+		#Prestige:hover {
+			background-color: #b5963a;
+			color: floralwhite;
+			border: none;
+			animation-name: example;
+    		animation-duration: 2s;animation-iteration-count: infinite;
+		}
+
+		#Basic:hover {
+			background-color: #818182;
+
+			color: floralwhite;
+
+		}
+	</style>
 </head>
 
 <body>
@@ -120,25 +145,29 @@
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-				<button class="btn btn-light btn-block" style="box-shadow: 0 0 10px rgba(0,0,0,0.16)">
-								<div class="card-header " style="background-color: transparent;">
-								  Featured
-								</div>
-								<div class="card-body">
-								  <h5 class="card-title">Special title treatment</h5>
-								  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-								</div>
+				<button id="Basic" class="btn btn-light btn-block" style="border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.16)">
+					<div class="card-header " style="background-color: transparent;">
+						<h3>
+							<b>Basic Plan</b>
+						</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					</div>
 				</button>
 			</div>
 			<div class="col-lg-6 col-md-12">
-				<button id="Prestige" class="btn btn-warning btn-block list-group-item-warning" >
-						<div class="card-header " style="background-color: transparent;">
-								Featured
-							  </div>
-							  <div class="card-body">
-								<h5 class="card-title">Special title treatment</h5>
-								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							  </div>
+				<button id="Prestige" class="btn btn-light btn-block " style="border-radius:10px; border:none;">
+					<div class="card-header " style="background-color: transparent;">
+						<h3>
+							<b style="text-shadow: gold 0 0 2px">Prestige Plan</b>
+						</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					</div>
 				</button>
 			</div>
 		</div>
