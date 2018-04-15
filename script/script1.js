@@ -2,5 +2,3 @@
 
 // formula
 
-
-Nothing to commit 
