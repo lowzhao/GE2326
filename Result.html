@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Pebble</title>
+	<link rel="icon" href="letterP.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -15,10 +16,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
 	    crossorigin="anonymous"></script>
 	<style>
-	  #background{
-			background: url(https://static.vinepair.com/wp-content/uploads/2016/07/Rye-HEAD-1.jpg);
-			background-size: 80% 80%;
-		}
 		@keyframes example {
 			0% {
 				box-shadow: 0 0 40px grey;
@@ -36,21 +33,25 @@
 			transition: ease-in-out;
 			transition-duration: 0.5s;
 			background-color:rgb(255, 244, 183);
+			padding: 5px 0px 0px 0px;
 		}
 
 		#Prestige:hover {
 			background-color: #b5963a;
-			color: floralwhite;
 			border: none;
+			color: #8B008B;
 			animation-name: example;
     		animation-duration: 2s;animation-iteration-count: infinite;
 		}
 
+    #Basic{
+		  padding: 5px 0px 0px 0px;
+		}
+
 		#Basic:hover {
-			background-color: #818182;
-
-			color: floralwhite;
-
+			background-color: #979595;
+			border: 1px outset white;
+			box-shadow: 0 0 10px blue;
 		}
 	</style>
 </head>
@@ -102,7 +103,7 @@
 
 	<div class="container mt-5 mb-5">
 		<div class="row">
-			<div class="card bg-light col-12 mb-3" style="">
+			<div class="card bg-light col-12 mb-3">
 				<div class="card-header font-weight-bold">Plan Coverage:</div>
 				<div class="card-body">
 					<div class="row">
@@ -122,7 +123,7 @@
 								<div class="col-8">
 									<div class="tab-content" id="nav-tabContent">
 										<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-											<b>
+											<b style="background-color: white;">
 												<span class="text-info">Basic plan</span> covers may coverdamage costs to the third party.</b> In rare cases, the plan may cover your
 											car damage
 										</div>
@@ -145,23 +146,53 @@
 		</div>
 	</div>
 
+
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
+<<<<<<< HEAD
 				<form method="GET" action="Thankyou.html" >
 				<button type="submit" id="Basic" class="btn btn-light btn-block" style="border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.16)">
 					<div class="card-header " style="background-color: transparent;">
+=======
+				<button id="Basic" class="btn btn-light btn-block" style="border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.16)">
+					<div class="card-header " >
+>>>>>>> 9ff9477772222c4424cadd34c89da4da87171cfb
 						<h3>
 							<b>Basic Plan</b>
 						</h3>
 					</div>
-					<div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<div class="card-body" style="background-color: white;">
+						<h2><bold>$149/month</h2>
 					</div>
-					<div class="card-footer " style="background-color: transparent;">
-							1000HKD per annum
-						  </div>
+					<div class="card-footer " style="background-color: white;">
+						<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+</table>
+					</div>
 				</button>
 				</form>
 			</div>
@@ -173,12 +204,36 @@
 							<b style="text-shadow: gold 0 0 2px">Prestige Plan</b>
 						</h3>
 					</div>
-					<div class="card-body">
-						<h5 class="card-title">Special title treatment</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<div class="card-body" style="background-color: white;">
+						<h2><bold>Starts at $499/month</h2>
 					</div>
-					<div class="card-footer" style="background-color: transparent;">
-							2000HKD per annum
+					<div class="card-footer" style="background-color: white;">
+						<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+	<thead>
+    <tr>
+      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
+      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
+    </tr>
+  </thead>
+</table>
 						  </div>
 				</button>
 				</form>
