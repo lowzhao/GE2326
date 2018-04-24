@@ -29,10 +29,10 @@
 		}
 
 		#Prestige {
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 			transition: ease-in-out;
 			transition-duration: 0.5s;
-			background-color:rgb(255, 244, 183);
+			background-color: rgb(255, 244, 183);
 			padding: 5px 0px 0px 0px;
 		}
 
@@ -41,11 +41,12 @@
 			border: none;
 			color: #8B008B;
 			animation-name: example;
-    		animation-duration: 2s;animation-iteration-count: infinite;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
 		}
 
-    #Basic{
-		  padding: 5px 0px 0px 0px;
+		#Basic {
+			padding: 5px 0px 0px 0px;
 		}
 
 		#Basic:hover {
@@ -56,8 +57,8 @@
 	</style>
 </head>
 
-<body>
-  <!-- <div id="background"> -->
+<body onload="calculateBasic()">
+	<!-- <div id="background"> -->
 	<div class="container-fluid bg-light ">
 		<div class="row bg-dark">
 			<div class="container">
@@ -150,87 +151,131 @@
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-				<form method="GET" action="Thankyou.html" >
-				<button type="submit" id="Basic" class="btn btn-light btn-block" style="border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.16)">
-					<div class="card-header " style="background-color: transparent;">
-						<h3>
-							<b>Basic Plan</b>
-						</h3>
-					</div>
-					<div class="card-body" style="background-color: white;">
-						<h2><bold>$149/month</h2>
-					</div>
-					<div class="card-footer " style="background-color: white;">
-						<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-</table>
-					</div>
-				</button>
+				<form method="GET" action="Thankyou.html">
+					<button type="submit" id="Basic" class="btn btn-light btn-block" style="border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.16)">
+						<div class="card-header " style="background-color: transparent;">
+							<h3>
+								<b>Basic Plan</b>
+							</h3>
+						</div>
+						<div class="card-body" style="background-color: white;">
+							<h2>
+								<b id="basicV">$149/month</b>
+							</h2>
+						</div>
+						<div class="card-footer " style="background-color: white;">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</button>
 				</form>
 			</div>
 			<div class="col-lg-6 col-md-12">
-				<form method="GET" action="Thankyou.html" >
-				<button type="submit" id="Prestige" class="btn btn-light btn-block " style="border-radius:10px; border:none;">
-					<div class="card-header " style="background-color: transparent;">
-						<h3>
-							<b style="text-shadow: gold 0 0 2px">Prestige Plan</b>
-						</h3>
-					</div>
-					<div class="card-body" style="background-color: white;">
-						<h2><bold>Starts at $499/month</h2>
-					</div>
-					<div class="card-footer" style="background-color: white;">
-						<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-	<thead>
-    <tr>
-      <th scope="col"><img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"/></th>
-      <th scope="col"><p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p></th>
-    </tr>
-  </thead>
-</table>
-						  </div>
-				</button>
+				<form method="GET" action="Thankyou.html">
+					<button type="submit" id="Prestige" class="btn btn-light btn-block " style="border-radius:10px; border:none;">
+						<div class="card-header " style="background-color: transparent;">
+							<h3>
+								<b style="text-shadow: gold 0 0 2px">Prestige Plan</b>
+							</h3>
+						</div>
+						<div class="card-body" style="background-color: white;">
+							<h2>
+								<b id="prestigeV">Starts at $499/month</b>
+							</h2>
+						</div>
+						<div class="card-footer" style="background-color: white;">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+								<thead>
+									<tr>
+										<th scope="col">
+											<img src="https://www.healthandsafetysigns.co.uk/wp-content/uploads/2017/08/tick.png" alt="icon" width="20px" height="20px"
+											/>
+										</th>
+										<th scope="col">
+											<p class="card-text" style="font-size: 10px;">With supporting text below as</br> a natural lead-in to additional content.</p>
+										</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</button>
 				</form>
 			</div>
 		</div>
@@ -262,8 +307,20 @@
 		</div>
 	</div>
 
-<!-- </div> -->
+	<!-- </div> -->
 
+	<script>
+		function calculateBasic() {
+			console.log(window.location.href);
+			console.log(get("age"));
+		}
+
+		function get(name) {
+			if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+				return decodeURIComponent(name[1]);
+		}
+	</script>
 </body>
+
 
 </html>
